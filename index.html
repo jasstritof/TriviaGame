@@ -1,0 +1,62 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+</head>
+<body>
+    <form>
+        <h1>
+            Fruits and Vegetables Trivia Game 
+        </h1>
+        <h4>
+            Please indicate whether the following statements are true or false. You have 30 seconds to answer 5 questions. Good luck!
+        </h4>
+
+        <div id="timeRemaining">
+            <strong>Time Remaining:</strong> 
+        </div>
+        <div>
+            <STRONG>1)</STRONG>: Botanically speaking, tomatoes are vegetables.
+            <INPUT TYPE="radio" NAME="q1" VALUE="t">True
+            <INPUT TYPE="radio" NAME="q1" VALUE="f">False
+        </div>
+            <!-- Tomatoes are actually fruits.  -->
+        <div>
+            <STRONG>2)</STRONG>: Blueberries are the fruit with the most antioxidants. 
+            <INPUT TYPE="radio" NAME="q2" VALUE="t">True
+            <INPUT TYPE="radio" NAME="q2" VALUE="f">False
+        </div>
+            
+        <div>
+            <STRONG>3)</STRONG>: An average pomegranate has 100 calories. 
+            <INPUT TYPE="radio" NAME="q3" VALUE="t">True
+            <INPUT TYPE="radio" NAME="q3" VALUE="f">False
+        </div>
+
+            <STRONG>4)</STRONG>: Adults are recommended to eat 6 servings of fruit daily. 
+            <INPUT TYPE="radio" NAME="q4" VALUE="t">True
+            <INPUT TYPE="radio" NAME="q4" VALUE="f">False
+        
+        <div>
+            <STRONG>5)</STRONG>: There are 56 different types of apple. 
+            <INPUT TYPE="radio" NAME="q5" VALUE="t">True
+            <INPUT TYPE="radio" NAME="q5" VALUE="f">False
+        </div>
+        
+        <button type="button" id="submit_button">Submit Answers</button>
+    </form>
+    <div id=results>
+        
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
