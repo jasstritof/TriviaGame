@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Trivia Game</title>
 </head>
 <body>
@@ -12,51 +13,66 @@
         <h1>
             Fruits and Vegetables Trivia Game 
         </h1>
-        <h4>
+
+        <!-- This h4 tag will hold the instructions for the trivia game.  -->
+        <h4 id="instructions">
             Please indicate whether the following statements are true or false. You have 30 seconds to answer 5 questions. Good luck!
         </h4>
 
+<!-- Time remaining portion will let the user know how much time is left in their trivia game.  -->
         <div id="timeRemaining">
-            <strong>Time Remaining:</strong> 
+            <strong>Time Remaining: 30 Seconds</strong> 
         </div>
-        <div>
-            <STRONG>1)</STRONG>: Botanically speaking, tomatoes are vegetables.
+
+        <!-- This is a div that will hold question 1 and its true/false radio buttons. -->
+        <!-- Cooking tomatoes actually concentrates the lycopene. (F).  -->
+        <div id="Q1">
+            <STRONG>1)</STRONG>: Cooking tomatoes destroys the lycopene they contain. 
             <INPUT TYPE="radio" NAME="q1" VALUE="t">True
             <INPUT TYPE="radio" NAME="q1" VALUE="f">False
         </div>
-            <!-- Tomatoes are actually fruits.  -->
-        <div>
+        
+        <!-- This is a div that will hold question 2 and its true/false radio buttons. -->
+        <!-- Elderberries actually have more antioxidants than blueberries (F).  -->
+        <div id="Q2">
             <STRONG>2)</STRONG>: Blueberries are the fruit with the most antioxidants. 
             <INPUT TYPE="radio" NAME="q2" VALUE="t">True
             <INPUT TYPE="radio" NAME="q2" VALUE="f">False
         </div>
-            
-        <div>
-            <STRONG>3)</STRONG>: An average pomegranate has 100 calories. 
+        
+        <!-- This is a div that will hold question 3 and its true/false radio buttons. -->
+        <!-- Apple seeds really do have arsenic (T).  -->
+        <div id="Q3">
+            <STRONG>3)</STRONG>: Apple seeds have cyanide in them. 
             <INPUT TYPE="radio" NAME="q3" VALUE="t">True
             <INPUT TYPE="radio" NAME="q3" VALUE="f">False
         </div>
 
-            <STRONG>4)</STRONG>: Adults are recommended to eat 6 servings of fruit daily. 
+        <!-- This is a div that will hold question 4 and its true/false radio buttons. -->
+        <!-- This is actually true, watch out for grapefruit when you're on meds! (T)-->
+        <div id="Q4">
+            <STRONG>4)</STRONG>: Grapefruit interferes with the function of many medications. 
             <INPUT TYPE="radio" NAME="q4" VALUE="t">True
             <INPUT TYPE="radio" NAME="q4" VALUE="f">False
+        </div>
         
-        <div>
-            <STRONG>5)</STRONG>: There are 56 different types of apple. 
+        <!-- This is a div that will hold question 5 and its true/false radio buttons. -->
+        <!-- This is true; pomegranates are one of the only foods shown to help reverse atherosclerotic disease (T).  -->
+        <div id="Q5">
+            <STRONG>5)</STRONG>: Pomegranate juice helps fight atherosclerotic disease. 
             <INPUT TYPE="radio" NAME="q5" VALUE="t">True
             <INPUT TYPE="radio" NAME="q5" VALUE="f">False
         </div>
         
-        <button type="button" id="submit_button">Submit Answers</button>
+        <button type="button" id="submit_button"><strong>Submit Answers</strong></button>
     </form>
-    <div id=results>
-        
-    </div>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+     <!-- jQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- Script -->
+     <script src="assets/javascript/app.js"></script>
+    
+     
 </body>
 </html>
 

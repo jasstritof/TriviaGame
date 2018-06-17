@@ -1,0 +1,14 @@
+body {
+    background-color: green;
+    color: white; 
+    
+}
+
+div {
+    padding-bottom: 30px; 
+}
+
+#timeRemaining{
+    color: pink; 
+}
+
